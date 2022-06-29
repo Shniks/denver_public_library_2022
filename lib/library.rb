@@ -13,6 +13,17 @@ class Library
     @authors = []
   end
 
+  def add_author(author)
+    authors << author
+    add_books(author)
+  end
+
+  def add_books(author)
+    author.books.each do |book|
+      books << book
+    end
+  end
+
 
 
 end
