@@ -1,0 +1,30 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/lihkin/coding/ruby/practice/denver_public_library_2022/lib/book.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1656527819
+  }
+}
