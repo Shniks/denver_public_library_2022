@@ -24,6 +24,15 @@ class Library
     end
   end
 
+  def publication_time_frame_for(author)
+    years = get_publication_years(author)
+    result = {:start => years.min.to_s, :end => years.max.to_s}
+  end
 
+  def get_publication_years(author)
+    author.books.map do |book|
+      book.publication_year.to_i
+    end
+  end
 
 end
