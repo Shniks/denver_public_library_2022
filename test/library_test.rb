@@ -63,9 +63,9 @@ class LibraryTest < Minitest::Test
     harper_lee = Author.new({first_name: "Harper", last_name: "Lee"})
     mockingbird = harper_lee.write("To Kill a Mockingbird", "July 11, 1960")
 
-    refute dpl.checkout(mockingbird)
-    refute dpl.checkout(jane_eyre)
-    refute dpl.checkout(villette)
+    refute dpl.checkout(mockingbird) #This book doesn't exist in library
+    refute dpl.checkout(jane_eyre) #This book doesn't exist in library
+    refute dpl.checkout(villette) #This book doesn't exist in library
   end
 
   def test_if_a_book_in_the_library_can_be_checked_out
@@ -81,6 +81,8 @@ class LibraryTest < Minitest::Test
 
     assert dpl.checkout(jane_eyre)
     assert_equal [jane_eyre], dpl.checked_out_books
+
+    refute dpl.checkout(jane_eyre) #This book cannot be checked out as it is alrleady checked out
   end
 
 end

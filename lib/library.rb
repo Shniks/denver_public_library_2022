@@ -5,12 +5,14 @@ class Library
 
   attr_reader :name,
               :books,
-              :authors
+              :authors,
+              :checked_out_books
 
   def initialize(library)
     @name = library
     @books = []
     @authors = []
+    @checked_out_books = []
   end
 
   def add_author(author)
@@ -36,7 +38,17 @@ class Library
   end
 
   def checkout(book)
-    @books.include?(book)
+    is_book_checked_out?(book)
+  end
+
+  def is_book_checked_out?(book) # Can this method be refactored and simplified?
+    if books.include?(book)
+      books.delete(book)
+      checked_out_books << book
+      return true
+    else
+      return false
+    end
   end
 
 end
