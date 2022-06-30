@@ -63,8 +63,24 @@ class LibraryTest < Minitest::Test
     harper_lee = Author.new({first_name: "Harper", last_name: "Lee"})
     mockingbird = harper_lee.write("To Kill a Mockingbird", "July 11, 1960")
 
-    assert_equal false, dpl.checkout(mockingbird)
-    assert_equal false, dpl.checkout(jane_eyre)
+    refute dpl.checkout(mockingbird)
+    refute dpl.checkout(jane_eyre)
+    refute dpl.checkout(villette)
+  end
+
+  def test_if_a_book_in_the_library_can_be_checked_out
+    dpl = Library.new("Denver Public Library")
+    charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
+    jane_eyre = charlotte_bronte.write("Jane Eyre", "October 16, 1847")
+    charlotte_bronte.write("Villette", "1853")
+    harper_lee = Author.new({first_name: "Harper", last_name: "Lee"})
+    harper_lee.write("To Kill a Mockingbird", "July 11, 1960")
+
+    dpl.add_author(charlotte_bronte)
+    dpl.add_author(harper_lee)
+
+    assert dpl.checkout(jane_eyre)
+    assert_equal [jane_eyre], dpl.checked_out_books
   end
 
 end
