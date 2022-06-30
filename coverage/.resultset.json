@@ -4,7 +4,6 @@
       "/Users/lihkin/coding/ruby/practice/denver_public_library_2022/lib/author.rb": {
         "lines": [
           1,
-          1,
           null,
           1,
           null,
@@ -13,9 +12,9 @@
           null,
           null,
           1,
-          8,
-          8,
-          8,
+          10,
+          10,
+          10,
           null,
           null,
           1,
@@ -23,10 +22,10 @@
           null,
           null,
           1,
-          11,
+          14,
           null,
-          11,
-          11,
+          14,
+          14,
           null,
           null,
           null,
@@ -42,14 +41,12 @@
           null,
           1,
           null,
-          1,
-          null,
           null,
           null,
           1,
-          13,
-          13,
-          13,
+          16,
+          16,
+          16,
           null,
           null,
           null
@@ -57,7 +54,6 @@
       },
       "/Users/lihkin/coding/ruby/practice/denver_public_library_2022/test/book_test.rb": {
         "lines": [
-          1,
           1,
           1,
           1,
@@ -142,6 +138,18 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -157,9 +165,9 @@
           null,
           null,
           1,
-          4,
-          4,
-          4,
+          5,
+          5,
+          5,
           null,
           null,
           1,
@@ -188,6 +196,6 @@
         ]
       }
     },
-    "timestamp": 1656547515
+    "timestamp": 1656550041
   }
 }

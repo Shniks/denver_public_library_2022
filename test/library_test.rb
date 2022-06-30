@@ -55,4 +55,16 @@ class LibraryTest < Minitest::Test
     assert_equal ({:start=>"1960", :end=>"1960"}), dpl.publication_time_frame_for(harper_lee)
   end
 
+  def test_if_a_book_is_not_in_library
+    dpl = Library.new("Denver Public Library")
+    charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
+    jane_eyre = charlotte_bronte.write("Jane Eyre", "October 16, 1847")
+    villette = charlotte_bronte.write("Villette", "1853")
+    harper_lee = Author.new({first_name: "Harper", last_name: "Lee"})
+    mockingbird = harper_lee.write("To Kill a Mockingbird", "July 11, 1960")
+
+    assert_equal false, dpl.checkout(mockingbird)
+    assert_equal false, dpl.checkout(jane_eyre)
+  end
+
 end

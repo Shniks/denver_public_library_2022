@@ -1,5 +1,4 @@
 require './lib/book'
-require 'pry'
 
 class Author
 
@@ -21,7 +20,7 @@ class Author
     book = Book.new({author_first_name: first_name, author_last_name: last_name,
                       title: title, publication_date: publication_date})
     books << book
-    book 
+    book
   end
 
 

@@ -1,5 +1,3 @@
-require 'pry'
-
 class Book
 
   attr_reader :title,

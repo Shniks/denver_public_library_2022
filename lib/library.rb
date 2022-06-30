@@ -26,7 +26,7 @@ class Library
 
   def publication_time_frame_for(author)
     years = get_publication_years(author)
-    result = {:start => years.min.to_s, :end => years.max.to_s}
+    {:start => years.min.to_s, :end => years.max.to_s}
   end
 
   def get_publication_years(author)
