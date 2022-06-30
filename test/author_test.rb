@@ -38,7 +38,4 @@ class AuthorTest < Minitest::Test
     assert_equal 2, charlotte_bronte.books.count
   end
 
-
-
-
 end

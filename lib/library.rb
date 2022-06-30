@@ -1,5 +1,4 @@
 require './lib/author'
-require 'pry'
 
 class Library
 

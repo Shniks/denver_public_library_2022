@@ -23,8 +23,4 @@ class Author
     book
   end
 
-
-
-
-
 end
