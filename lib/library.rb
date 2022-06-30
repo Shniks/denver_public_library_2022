@@ -35,4 +35,8 @@ class Library
     end
   end
 
+  def checkout(book)
+    @books.include?(book)
+  end
+
 end
