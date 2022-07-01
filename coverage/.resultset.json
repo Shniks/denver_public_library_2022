@@ -28,10 +28,6 @@
           23,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -218,7 +214,6 @@
       "/Users/lihkin/coding/ruby/practice/denver_public_library_2022/lib/library.rb": {
         "lines": [
           1,
-          1,
           null,
           1,
           null,
@@ -286,6 +281,6 @@
         ]
       }
     },
-    "timestamp": 1656611862
+    "timestamp": 1656698695
   }
 }
